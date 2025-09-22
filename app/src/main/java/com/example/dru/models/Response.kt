@@ -56,6 +56,7 @@ data class Section(
 data class Offer(
     val id: String,
     val title: String,
+    val description: String,
     @SerializedName("detailImgUrl")
     val detailImgUrl: String,
     @SerializedName("price_before")
@@ -63,5 +64,6 @@ data class Offer(
     @SerializedName("price_after")
     val priceAfter: Int?,
     val currency: String?,
-    val vendor: String?
+    val vendor: String?,
+    val action: Action?
 )
