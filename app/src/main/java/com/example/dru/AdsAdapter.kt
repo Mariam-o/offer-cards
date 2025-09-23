@@ -3,7 +3,6 @@ package com.example.dru
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -22,7 +21,7 @@ class AdsAdapter(private val offers: List<Offer>) : RecyclerView.Adapter<AdsAdap
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.cardImage)
         val textView: TextView = itemView.findViewById(R.id.cardText)
-        val priceButton: Button = itemView.findViewById(R.id.priceButton)
+        val priceButton: TextView = itemView.findViewById(R.id.priceButton)
         val oldPriceText: TextView = itemView.findViewById(R.id.oldPriceText)
         val vendorButton: TextView = itemView.findViewById(R.id.vendorButton)
     }

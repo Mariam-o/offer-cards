@@ -7,12 +7,10 @@
     android:layout_marginBottom="16dp"
     app:cardCornerRadius="10dp"
     app:cardElevation="2dp">
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="220dp"
         >
-
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/cardImage"
             android:layout_width="0dp"
@@ -22,7 +20,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:shapeAppearanceOverlay="@style/TopRoundedImage" />
-
         <TextView
             android:id="@+id/vendorButton"
             android:layout_width="wrap_content"
@@ -40,7 +37,6 @@
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@id/cardImage"
             app:layout_constraintTop_toTopOf="@id/cardImage" />
-
         <androidx.cardview.widget.CardView
             android:id="@+id/contentCardView"
             android:layout_width="0dp"
@@ -51,14 +47,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardImage">
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 >
-
                 <TextView
                     android:id="@+id/cardText"
                     android:layout_width="0dp"
@@ -69,7 +63,6 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
                 <LinearLayout
                     android:id="@+id/priceContainer"
                     android:layout_width="0dp"
@@ -80,8 +73,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardText">
-
-                    <Button
+                    <TextView
                         android:id="@+id/priceButton"
                         android:layout_width="wrap_content"
                         android:layout_height="24dp"
@@ -93,8 +85,9 @@
                         android:textSize="14sp"
                         android:paddingStart="11.5dp"
                         android:paddingEnd="11.5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
                         />
-
                     <TextView
                         android:id="@+id/oldPriceText"
                         android:layout_width="wrap_content"
@@ -106,12 +99,8 @@
                         android:textColor="@color/neutral_400"
                         android:textSize="12sp"
                         />
-
                 </LinearLayout>
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </androidx.cardview.widget.CardView>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
